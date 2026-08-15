@@ -1,0 +1,10 @@
+origin: ohamadeh/linguist
+
+
+# Define what permissions can be granted
+statements:
+  - subjects:
+      - 'repo:ohamadeh@135509168/linguist@1328891649:**' # any workflow from any branch
+    permissions:
+      contents: write  # Allow pushing
+      pull-requests: write # Allow creating pull requests
