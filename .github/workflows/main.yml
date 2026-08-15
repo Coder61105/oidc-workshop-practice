@@ -4,7 +4,7 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello from GitHub Actions!"
+      - run: echo "I am ready for the OIDC workshop!"
       
     
 
