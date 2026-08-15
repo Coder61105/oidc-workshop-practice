@@ -9,12 +9,12 @@ permissions:
 
 jobs:
   test-job:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: qoomon/actions--access-token@v3
         id: access-token
         with:
-          owner: ohamadeh
+          owner: Coder61105
           repository: argocd-example-apps
           permissions: |
             contents: write
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout target repo
         uses: actions/checkout@v4
         with:
-          repository: ohamadeh/argocd-example-apps
+          repository: Coder61105/oidc-workshop-practice
           token: ${{ steps.access-token.outputs.token }}
 
       - name: Make a change to open a PR for
